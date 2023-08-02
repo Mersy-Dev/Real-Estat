@@ -16,6 +16,7 @@ const Residence = () => {
 
 
                 <Swiper {...sliderSettings}r>
+                    <SliderButton/>
                     {
                         data.map((card, i) => (
                             <SwiperSlide key={i}>
@@ -45,3 +46,15 @@ const Residence = () => {
 }
 
 export default Residence
+
+const SliderButton = () => {
+    const swiper = useSwiper();
+
+    return (
+        <div className=" flexCenter r-buttons">
+            <button onClick={() => swiper.slidePrev()}>&lt;</button>
+            <button onClick={() => swiper.slideNext()}>&gt;</button>
+
+        </div>
+    )
+}
