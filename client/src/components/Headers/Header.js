@@ -1,56 +1,40 @@
 import React, { useState } from 'react'
 import './Header.css'
-import logo from '../../gallery/Logo.jfif'
+import Logo from '../LogoAndLinks/Logo';
 import { BiMenuAltRight } from "react-icons/bi";
-import OutsideClickHandler from "react-outside-click-handler";
+import NavLinks from '../LogoAndLinks/NavLinks';
+import { FaBars } from 'react-icons/fa'
+// import { Link } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+
+
 
 
 const Header = () => {
-    const [menuOpened, setMenuOpened] = useState(false);
 
-    const getMenuStyles = (menuOpened) => {
-        if (document.documentElement.clientWidth <= 800) {
-            return { right: !menuOpened && "-100%" }
-        }
-
-    }
 
 
     return (
-        <section className="h-wrapper">
-            <div className=" flexCenter paddings innerWidth h-container">
-                <img className=' w-20 h-10' src="https://i.etsystatic.com/8684670/r/il/0b8739/2383211648/il_570xN.2383211648_nz05.jpg" alt="" />
+        <BrowserRouter>
+            <header className=" bg-transparent sticky top-0 z-[20] mx-auto flex-wrap flex w-full items-center justify-between  text-white  p-2">
+                <Logo /> 
+                <NavLinks/>
+                
 
-
-                <OutsideClickHandler onOutsideClick={()=>{
-                    setMenuOpened(false)
-                }}> 
-
-
-                    <div className="flexCenter h-menu" style={getMenuStyles(menuOpened)}>
-                        <a href="">
-                            Residence
-                        </a>
-                        <a href="">Our Values</a>
-                        <a href="">Contact Us</a>
-                        <a href="">Get Started</a>
-                        <button className='button'>
-                            <a href="">Contact</a>
-
-                        </button>
-                    </div>
-                </OutsideClickHandler>
-
-
-
-
-                <div className="menu-icon" onClick={() => setMenuOpened((prev) => !prev)}>
-                    <BiMenuAltRight size={30} />
-
-                </div>
-            </div>
-        </section>
+            </header>
+        </BrowserRouter>
     )
 }
 
 export default Header
+
+
+
+{/* <div>
+                <Link to="/residence">Residence</Link>
+                <Link to="/values">Our Values</Link>
+                <Link to="/contactus">Contact Us</Link>
+                <Link to="/getstart">Get Started</Link>
+                <button className='button'><Link to="/residence">Contact</Link></button>
+            </div> */}
+{/* <NavLinks /> */ }

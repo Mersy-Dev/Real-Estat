@@ -3,11 +3,33 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Header from './components/Headers/Header';
+import Hero from './components/Hero/Hero';
+import '../src/app.css'
+import Companies from './components/Companies/Companies';
+import Value from './components/Value/Value';
+import Contact from './components/Contact/Contact';
+import GetStarted from './components/GetStarted/GetStarted';
+import Footer from './components/Footer/Footer';
+import Residence from './components/Residences/Residence';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <div className='App'>
+      <div>
+          <div className='white-gradient'/>
+          <Header />
+          <Hero />
+        </div>
+          <Companies /> 
+          <Residence/>
+          <Value/>
+          <Contact/>
+          <GetStarted/>
+          <Footer/>
+          <App/>
+    </div>
   </React.StrictMode>
 );
 

@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
     return (
-        <section className="hero-wrapper">
+        <section className="hero-wrapper my-3">
             <div className="paddings innerWidth flexCenter hero-container ">
 
                 {/* left side */}

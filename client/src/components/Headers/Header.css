@@ -23,8 +23,20 @@
     display: none;
 }
 
+
+ul li a{
+    @apply rounded py-[7px] px-[13px] text-[17px]
+    hover:bg-slate-500 transition-all duration-300
+}
+
+
+
+#check:checked ~ ul{
+    left: 0;
+}
+
 @media (max-width: 768px) {
-    .menu-icon {
+    /* .menu-icon {
         display: block;
     }
 
@@ -45,5 +57,5 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
         z-index: 99;
 
-    }
+    } */
 }
