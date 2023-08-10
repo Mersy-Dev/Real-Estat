@@ -6,10 +6,10 @@ import {Menu, X} from 'lucide-react'
 const Nav = () => {
   return (
     <>
-      <div className='h hover:bg-slate-300 cursor-pointer p-2 text-center'><Link to="/abt">Residence</Link></div>
-      <div className='hover:bg-slate-300 cursor-pointer p-2 text-center'><Link to="/values">Our Values</Link></div>
-      <div className='hover:bg-slate-300 cursor-pointer p-2 text-center'><Link to="/contactus">Contact Us</Link></div>
-      <div className='hover:bg-slate-300 cucrsor-pointer p-2 text-center'><Link to="/getstart">Get Started</Link></div>
+      <div className='h hover:bg-blue-500 hover:rounded cursor-pointer p-2 text-center'><Link to="/abt">Residence</Link></div>
+      <div className='hover:bg-blue-500 hover:rounded cursor-pointer p-2 text-center'><Link to="/values">Our Values</Link></div>
+      <div className='hover:bg-blue-500 hover:rounded cursor-pointer p-2 text-center'><Link to="/contactus">Contact Us</Link></div>
+      <div className='hover:bg-blue-500 hover:rounded cucrsor-pointer p-2 text-center'><Link to="/getstart">Get Started</Link></div>
       <button className='button'><Link to="/residence">Contact</Link></button>
 
 

@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Header from './components/Headers/Header';
 import Hero from './components/Hero/Hero';
-import '../src/app.css'
+import './app.css'
 import Companies from './components/Companies/Companies';
 import Value from './components/Value/Value';
 import Contact from './components/Contact/Contact';
@@ -18,17 +18,17 @@ root.render(
   <React.StrictMode>
     <div className='App'>
       <div>
-          <div className='white-gradient'/>
-          <Header />
-          <Hero />
-        </div>
-          <Companies /> 
-          <Residence/>
-          <Value/>
-          <Contact/>
-          <GetStarted/>
-          <Footer/>
-          <App/>
+        <div className='white-gradient' />
+        <Header />
+        <Hero />
+      </div>
+      <Companies />
+      <Residence />
+      <Value />
+      <Contact />
+      <GetStarted />
+      <Footer />
+      <App />
     </div>
   </React.StrictMode>
 );

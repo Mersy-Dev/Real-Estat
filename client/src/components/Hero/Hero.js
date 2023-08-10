@@ -28,9 +28,9 @@ const Hero = () => {
                         <span className='secondaryText'>Find a variety of properties that suit you very easilty</span>
                         <span className='secondaryText'>Forget all difficulties in finding a residence for you</span>
                     </div>
-                    <div className=" flexCenter search-bar">
+                    <div className=" flexCenter search-bar ">
                         <HiLocationMarker color="var(--blue)" size={25}/>
-                        <input type='text' placeholder='Search every locatio...' className=' w-18 bg-white text-black' />
+                        <input type='text' placeholder='Search every locatio...' className=' w-18 bg-white text-black w-[100px]' />
                         <button className="button">Search</button>
 
 
